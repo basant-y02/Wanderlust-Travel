@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our curated selection of world-class destinations with Wanderlust Travel - from tropical beaches to cultural capitals.">
+    <meta property="og:title" content="Destinations - Wanderlust Travel">
+    <meta property="og:description" content="Explore our curated selection of world-class destinations with Wanderlust Travel - from tropical beaches to cultural capitals.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wanderlust-travel.com/destinations">
+    <title>Destinations - Wanderlust Travel</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Wanderlust <span>Travel</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="destinations-header">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1 class="display-3 fw-bold text-white">Our Destinations</h1>
+                    <p class="lead text-white">Explore the world's most breathtaking places with our expert guides</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Destinations Filter -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <button class="btn btn-outline-primary mx-2 my-1 filter-button active" data-filter="all">All Destinations</button>
+                        <button class="btn btn-outline-primary mx-2 my-1 filter-button" data-filter="europe">Europe</button>
+                        <button class="btn btn-outline-primary mx-2 my-1 filter-button" data-filter="asia">Asia</button>
+                        <button class="btn btn-outline-primary mx-2 my-1 filter-button" data-filter="americas">Americas</button>
+                        <button class="btn btn-outline-primary mx-2 my-1 filter-button" data-filter="africa">Africa</button>
+                        <button class="btn btn-outline-primary mx-2 my-1 filter-button" data-filter="oceania">Oceania</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Destination 1 -->
+                <div class="col-md-6 col-lg-4 destination-item" data-category="europe">
+                    <div class="card destination-card h-100 shadow-sm rounded-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1538970272646-f61fabb3a8a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Santorini, Greece">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h5 class="card-title mb-0">Santorini, Greece</h5>
+                                <span class="badge bg-primary">Europe</span>
+                            </div>
+                            <p class="card-text">Famous for its dramatic views, stunning sunsets, and white-washed houses with blue domes, Santorini is a dream destination for romance and relaxation.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-1"><i class="fas fa-calendar-alt text-primary me-2"></i> Best time to visit: May-October</li>
+                                <li class="mb-1"><i class="fas fa-sun text-primary me-2"></i> Average temp: 75°F (24°C)</li>
+                                <li class="mb-1"><i class="fas fa-clock text-primary me-2"></i> Flight time: 10-12 hours from NYC</li>
+                            </ul>
+                            <a href="#santorini" class="btn btn-outline-primary stretched-link" data-bs-toggle="modal">Explore More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destination 2 -->
+                <div class="col-md-6 col-lg-4 destination-item" data-category="asia">
+                    <div class="card destination-card h-100 shadow-sm rounded-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Kyoto, Japan">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h5 class="card-title mb-0">Kyoto, Japan</h5>
+                                <span class="badge bg-primary">Asia</span>
+                            </div>
+                            <p class="card-text">Japan's ancient capital is home to over 1,600 Buddhist temples, 400 Shinto shrines, and breathtaking gardens. Experience traditional tea ceremonies and seasonal cherry blossoms.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-1"><i class="fas fa-calendar-alt text-primary me-2"></i> Best time to visit: March-May, October-November</li>
+                                <li class="mb-1"><i class="fas fa-sun text-primary me-2"></i> Average temp: 60°F (16°C)</li>
+                                <li class="mb-1"><i class="fas fa-clock text-primary me-2"></i> Flight time: 12-14 hours from NYC</li>
+                            </ul>
+                            <a href="#kyoto" class="btn btn-outline-primary stretched-link" data-bs-toggle="modal">Explore More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destination 3 -->
+                <div class="col-md-6 col-lg-4 destination-item" data-category="asia">
+                    <div class="card destination-card h-100 shadow-sm rounded-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Bali, Indonesia">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h5 class="card-title mb-0">Bali, Indonesia</h5>
+                                <span class="badge bg-primary">Asia</span>
+                            </div>
+                            <p class="card-text">Known as the Island of the Gods, Bali offers lush jungles, volcanic mountains, iconic rice paddies, and some of the world's best beaches and surfing spots.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-1"><i class="fas fa-calendar-alt text-primary me-2"></i> Best time to visit: April-October</li>
+                                <li class="mb-1"><i class="fas fa-sun text-primary me-2"></i> Average temp: 82°F (28°C)</li>
+                                <li class="mb-1"><i class="fas fa-clock text-primary me-2"></i> Flight time: 20-24 hours from NYC</li>
+                            </ul>
+                            <a href="#bali" class="btn btn-outline-primary stretched-link" data-bs-toggle="modal">Explore More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destination 4 -->
+                <div class="col-md-6 col-lg-4 destination-item" data-category="europe">
+                    <div class="card destination-card h-100 shadow-sm rounded-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Paris, France">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h5 class="card-title mb-0">Paris, France</h5>
+                                <span class="badge bg-primary">Europe</span>
+                            </div>
+                            <p class="card-text">The City of Light needs no introduction. From the Eiffel Tower to world-class museums and cuisine, Paris offers endless romance and culture.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-1"><i class="fas fa-calendar-alt text-primary me-2"></i> Best time to visit: April-June, September-October</li>
+                                <li class="mb-1"><i class="fas fa-sun text-primary me-2"></i> Average temp: 59°F (15°C)</li>
+                                <li class="mb-1"><i class="fas fa-clock text-primary me-2"></i> Flight time: 7-8 hours from NYC</li>
+                            </ul>
+                            <a href="#paris" class="btn btn-outline-primary stretched-link" data-bs-toggle="modal">Explore More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destination 5 -->
+                <div class="col-md-6 col-lg-4 destination-item" data-category="americas">
+                    <div class="card destination-card h-100 shadow-sm rounded-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Machu Picchu, Peru">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h5 class="card-title mb-0">Machu Picchu, Peru</h5>
+                                <span class="badge bg-primary">Americas</span>
+                            </div>
+                            <p class="card-text">This 15th-century Inca citadel set high in the Andes Mountains is one of the New Seven Wonders of the World and a bucket-list destination for adventurers.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-1"><i class="fas fa-calendar-alt text-primary me-2"></i> Best time to visit: May-September</li>
+                                <li class="mb-1"><i class="fas fa-sun text-primary me-2"></i> Average temp: 66°F (19°C)</li>
+                                <li class="mb-1"><i class="fas fa-clock text-primary me-2"></i> Flight time: 8-10 hours from NYC</li>
+                            </ul>
+                            <a href="#machu-picchu" class="btn btn-outline-primary stretched-link" data-bs-toggle="modal">Explore More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destination 6 -->
+                <div class="col-md-6 col-lg-4 destination-item" data-category="africa">
+                    <div class="card destination-card h-100 shadow-sm rounded-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Cape Town, South Africa">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <h5 class="card-title mb-0">Cape Town, South Africa</h5>
+                                <span class="badge bg-primary">Africa</span>
+                            </div>
+                            <p class="card-text">Between Table Mountain and the Atlantic Ocean, Cape Town offers stunning landscapes, world-class vineyards, and incredible wildlife experiences.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-1"><i class="fas fa-calendar-alt text-primary me-2"></i> Best time to visit: November-March</li>
+                                <li class="mb-1"><i class="fas fa-sun text-primary me-2"></i> Average temp: 70°F (21°C)</li>
+                                <li class="mb-1"><i class="fas fa-clock text-primary me-2"></i> Flight time: 15-17 hours from NYC</li>
+                            </ul>
+                            <a href="#cape-town" class="btn btn-outline-primary stretched-link" data-bs-toggle="modal">Explore More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destination Modals -->
+    <!-- Santorini Modal -->
+    <div class="modal fade" id="santorini" tabindex="-1" aria-labelledby="santoriniLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="santoriniLabel">Santorini, Greece</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1538970272646-f61fabb3a8a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="img-fluid rounded mb-3" alt="Santorini">
+                        </div>
+                        <div class="col-md-6">
+                            <p>Santorini is one of the Cyclades islands in the Aegean Sea. It was devastated by a volcanic eruption in the 16th century BC, forever shaping its rugged landscape.</p>
+                            <p>The whitewashed, cubiform houses cling to cliffs above an underwater caldera. The island's beaches have black, red and white lava pebbles from its volcanic past.</p>
+                            <h6 class="mt-4">Highlights:</h6>
+                            <ul>
+                                <li>Sunset views from Oia village</li>
+                                <li>Red Beach with volcanic cliffs</li>
+                                <li>Ancient ruins at Akrotiri</li>
+                                <li>Local Assyrtiko wine tasting</li>
+                                <li>Caldera boat tours</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="contact.html" class="btn btn-primary">Book This Destination</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kyoto Modal -->
+    <div class="modal fade" id="kyoto" tabindex="-1" aria-labelledby="kyotoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="kyotoLabel">Kyoto, Japan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="img-fluid rounded mb-3" alt="Kyoto">
+                        </div>
+                        <div class="col-md-6">
+                            <p>Kyoto, once the capital of Japan, is known for its classical Buddhist temples, as well as gardens, imperial palaces, Shinto shrines and traditional wooden houses.</p>
+                            <p>It's also known for formal traditions such as kaiseki dining and geisha entertainers found in the Gion district. Cherry blossoms in spring and colorful leaves in autumn make Kyoto especially beautiful.</p>
+                            <h6 class="mt-4">Highlights:</h6>
+                            <ul>
+                                <li>Fushimi Inari Shrine's torii gates</li>
+                                <li>Golden Pavilion (Kinkaku-ji)</li>
+                                <li>Arashiyama Bamboo Forest</li>
+                                <li>Traditional tea ceremonies</li>
+                                <li>Gion district geisha culture</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="contact.html" class="btn btn-primary">Book This Destination</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bali Modal -->
+    <div class="modal fade" id="bali" tabindex="-1" aria-labelledby="baliLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="baliLabel">Bali, Indonesia</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="img-fluid rounded mb-3" alt="Bali">
+                        </div>
+                        <div class="col-md-6">
+                            <p>Bali is an Indonesian island known for its forested volcanic mountains, iconic rice paddies, beaches and coral reefs. The island is home to religious sites like the cliffside Uluwatu Temple.</p>
+                            <p>Bali's culture is deeply spiritual, with daily offerings and elaborate temple ceremonies. The island offers everything from luxury resorts to backpacker hostels, surf spots to tranquil yoga retreats.</p>
+                            <h6 class="mt-4">Highlights:</h6>
+                            <ul>
+                                <li>Tegallalang Rice Terraces</li>
+                                <li>Uluwatu Temple cliff views</li>
+                                <li>Ubud's art and culture</li>
+                                <li>Seminyak's beaches and nightlife</li>
+                                <li>Mount Batur sunrise trek</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="contact.html" class="btn btn-primary">Book This Destination</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Paris Modal -->
+    <div class="modal fade" id="paris" tabindex="-1" aria-labelledby="parisLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="parisLabel">Paris, France</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="img-fluid rounded mb-3" alt="Paris">
+                        </div>
+                        <div class="col-md-6">
+                            <p>Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine.</p>
+                            <p>Beyond landmarks like the Eiffel Tower and the 12th-century Gothic Notre-Dame cathedral, the city is known for its cafe culture and designer boutiques along the Rue du Faubourg Saint-Honoré.</p>
+                            <h6 class="mt-4">Highlights:</h6>
+                            <ul>
+                                <li>Eiffel Tower and Seine River cruises</li>
+                                <li>Louvre Museum and Mona Lisa</li>
+                                <li>Montmartre and Sacré-Cœur</li>
+                                <li>Champs-Élysées and Arc de Triomphe</li>
+                                <li>World-class dining and patisseries</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="contact.html" class="btn btn-primary">Book This Destination</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Machu Picchu Modal -->
+    <div class="modal fade" id="machu-picchu" tabindex="-1" aria-labelledby="machuPicchuLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="machuPicchuLabel">Machu Picchu, Peru</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1526397751294-331021109fbd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="img-fluid rounded mb-3" alt="Machu Picchu">
+                        </div>
+                        <div class="col-md-6">
+                            <p>Machu Picchu is a 15th-century Inca citadel located in the Eastern Cordillera of southern Peru on a 7,970 ft mountain ridge. It is the most familiar icon of Inca civilization.</p>
+                            <p>The Incas built the estate around 1450 but abandoned it a century later at the time of the Spanish conquest. Although known locally, it was not known to the Spanish during the colonial period and remained unknown to the outside world until American historian Hiram Bingham brought it to international attention in 1911.</p>
+                            <h6 class="mt-4">Highlights:</h6>
+                            <ul>
+                                <li>Sun Gate (Inti Punku) sunrise views</li>
+                                <li>Temple of the Sun and Room of the Three Windows</li>
+                                <li>Inca Bridge trail</li>
+                                <li>Huayna Picchu mountain climb</li>
+                                <li>Sacred Valley tours</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="contact.html" class="btn btn-primary">Book This Destination</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cape Town Modal -->
+    <div class="modal fade" id="cape-town" tabindex="-1" aria-labelledby="capeTownLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="capeTownLabel">Cape Town, South Africa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="img-fluid rounded mb-3" alt="Cape Town">
+                        </div>
+                        <div class="col-md-6">
+                            <p>Cape Town is a port city on South Africa's southwest coast, on a peninsula beneath the imposing Table Mountain. Slowly rotating cable cars climb to the mountain's flat top, from which there are sweeping views of the city, the busy harbor and boats heading for Robben Island.</p>
+                            <p>The island, once a notorious prison, is now a living museum. The city has some of South Africa's best restaurants, art galleries, beaches and wine regions nearby.</p>
+                            <h6 class="mt-4">Highlights:</h6>
+                            <ul>
+                                <li>Table Mountain Aerial Cableway</li>
+                                <li>Cape of Good Hope and penguins at Boulders Beach</li>
+                                <li>Robben Island tours</li>
+                                <li>Kirstenbosch National Botanical Garden</li>
+                                <li>Stellenbosch wine region tours</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="contact.html" class="btn btn-primary">Book This Destination</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-3">Can't Find Your Dream Destination?</h2>
+                    <p class="lead mb-0">Our travel experts can create a custom itinerary just for you.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="contact.html" class="btn btn-light btn-lg px-4">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">Wanderlust Travel</h5>
+                    <p>Creating unforgettable travel experiences since 2008. Let us help you discover the world's most beautiful destinations.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white">About Us</a></li>
+                        <li class="mb-2"><a href="destinations.html" class="text-white">Destinations</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-white">Blog</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Travel St, Adventure City</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@wanderlusttravel.com</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3">Newsletter</h5>
+                    <p>Subscribe to get travel tips and special offers</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 Wanderlust Travel. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <a href="#" class="text-white me-3">Privacy Policy</a>
+                        <a href="#" class="text-white">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
